@@ -1,10 +1,13 @@
-package com.example.ejemplo1jlroyo.propertycross;
+package com.example.ejemplo1jlroyo.propertycross.view.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.ejemplo1jlroyo.propertycross.R;
+import com.example.ejemplo1jlroyo.propertycross.ResultSearchActivity;
 
 public class FilterSearchButtonActivity extends AppCompatActivity {
 

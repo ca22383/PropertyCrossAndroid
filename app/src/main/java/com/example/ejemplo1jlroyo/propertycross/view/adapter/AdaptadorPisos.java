@@ -1,4 +1,4 @@
-package com.example.ejemplo1jlroyo.propertycross;
+package com.example.ejemplo1jlroyo.propertycross.view.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -7,6 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.ejemplo1jlroyo.propertycross.Piso;
+import com.example.ejemplo1jlroyo.propertycross.R;
 
 import java.util.Vector;
 
@@ -30,12 +33,20 @@ public class AdaptadorPisos extends RecyclerView.Adapter<AdaptadorPisos.ViewHold
 
         public ImageView portada;
         public TextView titulo;
+        public TextView calle;
+        public TextView ciudad;
+        public TextView precio;
+
+
+
 
         public ViewHolder (View itemView){
             super(itemView);
             portada = (ImageView) itemView.findViewById(R.id.portada);
             portada.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
-            titulo = (TextView) itemView.findViewById(R.id.titulo);
+            ciudad = (TextView) itemView.findViewById(R.id.ciudad);
+            calle = (TextView) itemView.findViewById(R.id.calle);
+            precio = (TextView) itemView.findViewById(R.id.precio);
 
 
         }
@@ -57,7 +68,11 @@ public class AdaptadorPisos extends RecyclerView.Adapter<AdaptadorPisos.ViewHold
 
         Piso piso = vectorPisos.elementAt(posicion);
         holder.portada.setImageResource(piso.recursoImagen);
-        holder.titulo.setText(piso.calle);
+        holder.ciudad.setText(piso.ciudad);
+        holder.calle.setText(piso.calle);
+        holder.precio.setText(String.valueOf(piso.precio));
+
+
 
 
 

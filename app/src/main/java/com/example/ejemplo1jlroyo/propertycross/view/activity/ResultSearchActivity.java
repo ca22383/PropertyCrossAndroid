@@ -1,9 +1,12 @@
-package com.example.ejemplo1jlroyo.propertycross;
+package com.example.ejemplo1jlroyo.propertycross.view.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+
+import com.example.ejemplo1jlroyo.propertycross.Aplicacion;
+import com.example.ejemplo1jlroyo.propertycross.R;
 
 public class ResultSearchActivity extends AppCompatActivity {
 
