@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.ejemplo1jlroyo.propertycross.FilterSearchButtonActivity">
+    tools:context="com.example.ejemplo1jlroyo.propertycross.view.activity.FilterSearchButtonActivity">
 
     <LinearLayout
         android:orientation="vertical"
@@ -25,6 +25,23 @@
         android:paddingLeft="60dp"
         android:paddingRight="60dp">
 
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Left" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Center" />
+
+        </android.support.design.widget.TabLayout>
+
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -37,19 +54,6 @@
                 android:orientation="horizontal"
                 android:layout_weight="1" >
 
-                <Button
-                    android:text="Compra"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button5"
-                    android:layout_weight="1" />
-
-                <Button
-                    android:text="Alquiler"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button6"
-                    android:layout_weight="1" />
             </RadioGroup>
 
         </LinearLayout>

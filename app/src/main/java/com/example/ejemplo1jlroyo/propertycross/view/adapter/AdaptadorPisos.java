@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.ejemplo1jlroyo.propertycross.Piso;
+import com.example.ejemplo1jlroyo.propertycross.model.Piso;
 import com.example.ejemplo1jlroyo.propertycross.R;
 
 import java.util.Vector;

@@ -1,19 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
-    <ImageView
-        android:id="@+id/portada"
-        android:layout_width="120dp"
-        android:layout_height="180dp"
-        android:layout_alignParentTop="true"
-        android:layout_margin="12dp"
-        android:src="@drawable/piso1" />
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/titulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Titulo"
-        android:gravity="center" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/ciudad"
+                android:layout_width="match_parent"
+                android:text="Titulo"
+                android:gravity="center"
+
+                android:textColor="#000000"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:paddingTop="60dp" />
+
+            <TextView
+
+                android:text="calle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/calle"
+                android:gravity="center"
+
+                android:textColor="#000000"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="precio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/precio"
+                android:gravity="center"
+
+                android:textColor="#000000"
+                android:layout_weight="1"
+                android:paddingBottom="60dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/portada"
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:layout_margin="12dp"
+            android:src="@drawable/piso1"
+            android:layout_weight="1" />
+    </LinearLayout>
 
 </RelativeLayout>

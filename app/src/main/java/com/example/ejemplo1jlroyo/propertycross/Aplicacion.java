@@ -2,6 +2,9 @@ package com.example.ejemplo1jlroyo.propertycross;
 
 import android.app.Application;
 
+import com.example.ejemplo1jlroyo.propertycross.model.Piso;
+import com.example.ejemplo1jlroyo.propertycross.view.adapter.AdaptadorPisos;
+
 import java.util.Vector;
 
 /**

@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.ejemplo1jlroyo.propertycross.R;
-import com.example.ejemplo1jlroyo.propertycross.ResultSearchActivity;
 
 public class FilterSearchButtonActivity extends AppCompatActivity {
 
